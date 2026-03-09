@@ -5,7 +5,7 @@
 - 🏫 College: SB Jain Nagpur  
 - 📆 Semester/Year: VI/III  <b>( Sec- B )</b>
 
-#### USN-No: CS23184
+#### USN-No: CS23154
 
 ## About
 This repository contains weekly AI practical programs performed in lab.
@@ -22,3 +22,4 @@ This repository contains weekly AI practical programs performed in lab.
 - Python
 - VS Code
 - GitHub
+
