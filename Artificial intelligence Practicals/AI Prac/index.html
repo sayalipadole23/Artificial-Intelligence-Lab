@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Enquiry Chatbot | AI Project</title>
+    <meta name="description" content="An AI-powered rule-based chatbot for automated college enquiries. Modern implementation using pattern matching for immediate student support.">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
+    <div class="bg-shape shape3"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <i class="fa-solid fa-robot"></i> EduBot AI
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech">Technologies</a></li>
+            <li><a href="#demo">Chatbot Demo</a></li>
+            <li><a href="#code">Python Code</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="badge">Rule-Based AI System</div>
+            <h1 class="gradient-text">College Enquiry Chatbot</h1>
+            <p>Automated enquiry handling for college students. Get instant responses for admission, fees, courses, and more using pattern-matching AI.</p>
+            <div class="hero-buttons">
+                <a href="#demo" class="btn btn-primary"><i class="fa-solid fa-comment-dots"></i> Try the Chatbot</a>
+                <a href="#code" class="btn btn-secondary"><i class="fa-brands fa-python"></i> View Python Code</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="glass-card hero-image-container">
+                <div class="bot-avatar-large">
+                    <i class="fa-solid fa-robot fa-4x"></i>
+                </div>
+                <div class="floating-bubble bubble1">Hello! How can I help?</div>
+                <div class="floating-bubble bubble2">Ask me about admissions!</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <main class="container">
+        <!-- About Project Section -->
+        <section id="about" class="section-block">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="glass-grid">
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+                    <h3>Problem Statement</h3>
+                    <p>Managing college enquiries manually is time-consuming and inefficient. Staff are overwhelmed with repetitive questions about <strong>admission, fees, courses, hostels, timetables, and scholarships</strong>.</p>
+                </div>
+                
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                    <h3>Feasibility Study</h3>
+                    <p>A domain-specific chatbot designed exclusively for the college enquiry system is highly feasible. It reduces manual workload, handles concurrent queries, and provides accurate, instant responses without complex ML models.</p>
+                </div>
+                
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Expected Outcome</h3>
+                    <p>Automated replies ensuring fast student support and a 24/7 enquiry system. Significantly reduced staff workload and an improved overall experience for prospective and current students.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Details Section -->
+        <section id="tech" class="section-block">
+            <h2 class="section-title">AI Techniques & Architecture</h2>
+            <div class="two-col-layout">
+                <div class="tech-details">
+                    <div class="glass-card feature-card">
+                        <i class="fa-solid fa-brain feature-icon"></i>
+                        <div>
+                            <h4>AI Technique</h4>
+                            <p><strong>Rule-based chatbot</strong> using pattern matching and predefined robust responses. It evaluates user input against a set of predefined rules to formulate an answer.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card feature-card">
+                        <i class="fa-solid fa-network-wired feature-icon"></i>
+                        <div>
+                            <h4>Knowledge Representation</h4>
+                            <p><strong>Pattern Rules:</strong> Simple and effective <code>If-Then</code> condition mapping. e.g. <em>If user asks 'admission' → reply with admission info</em>.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card tools-card">
+                        <h4>Tools & Technologies</h4>
+                        <div class="tool-tags">
+                            <span class="tag"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="tag"><i class="fa-regular fa-lightbulb"></i> Rule-based AI</span>
+                            <span class="tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                            <span class="tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                            <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Workflow Diagram -->
+                <div class="workflow-diagram glass-card">
+                    <h3>System Workflow</h3>
+                    <div class="flow-steps">
+                        <div class="step">
+                            <i class="fa-solid fa-user"></i>
+                            <p>User Input</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-down flow-arrow"></i>
+                        <div class="step">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>Keyword Extraction & Pattern Matching</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-down flow-arrow"></i>
+                        <div class="step">
+                            <i class="fa-solid fa-database"></i>
+                            <p>Knowledge Base (Rules Dictionary)</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-down flow-arrow"></i>
+                        <div class="step">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <p>Automated Response</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chatbot Demo and Dataset Section -->
+        <section id="demo" class="chat-section">
+            <h2 class="section-title">Interactive Demo & Dataset</h2>
+            <div class="demo-layout">
+                <div class="dataset-info">
+                    <div class="glass-card">
+                        <h3>Dataset Reference</h3>
+                        <p>The system is trained to respond to the following types of queries. Try asking these in the demo!</p>
+                        <ul class="dataset-list">
+                            <li><i class="fa-solid fa-circle-play"></i> What courses are available?</li>
+                            <li><i class="fa-solid fa-circle-play"></i> What is the admission process?</li>
+                            <li><i class="fa-solid fa-circle-play"></i> What are the fees?</li>
+                            <li><i class="fa-solid fa-circle-play"></i> Is hostel available?</li>
+                            <li><i class="fa-solid fa-circle-play"></i> What is college timing?</li>
+                            <li><i class="fa-solid fa-circle-play"></i> Where is college located?</li>
+                            <li><i class="fa-solid fa-circle-play"></i> What documents are required for admission?</li>
+                            <li><i class="fa-solid fa-circle-play"></i> Is scholarship available?</li>
+                            <li><i class="fa-solid fa-circle-play"></i> Contact details of college?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Chatbot Interface -->
+                <div class="chatbot-container glass-card">
+                    <div class="chat-header">
+                        <div class="bot-info">
+                            <div class="bot-avatar"><i class="fa-solid fa-robot"></i></div>
+                            <div>
+                                <h4>EduBot</h4>
+                                <span class="status"><span class="dot"></span> Online</span>
+                            </div>
+                        </div>
+                        <button class="icon-btn" id="clearChat" title="Clear Chat"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                    
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Messages will be injected here via JS -->
+                        <div class="message bot-message">
+                            Hi there! I am the College Enquiry Chatbot. How can I help you today?
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input-area">
+                        <input type="text" id="userInput" placeholder="Ask about admission, fees, courses..." autocomplete="off">
+                        <button id="sendBtn" class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Python Code Section -->
+        <section id="code" class="section-block">
+            <h2 class="section-title">Core Implementation</h2>
+            <div class="glass-card code-container">
+                <div class="code-header">
+                    <span><i class="fa-brands fa-python"></i> chatbot.py</span>
+                    <button id="copyBtn" class="icon-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                </div>
+                <pre><code class="language-python"># Rule-Based College Enquiry Chatbot (Pattern Matching)
+
+def get_response(user_input):
+    input_text = user_input.lower()
+    
+    # Pattern matching rules dictionary
+    rules = {
+        "admission": "Admission is open for 2026. Process: Online Registration -> Entrance Test -> Merit List. Visit the admission portal.",
+        "course": "We offer B.Tech, M.Tech, BCA, MCA, BBA, and MBA. For a detailed syllabus, please check the academics tab.",
+        "fee": "Fees vary by course: B.Tech is $4000/yr, BCA is $2000/yr. You can pay in 2 installments.",
+        "hostel": "Yes, we have separate AC/Non-AC hostels for boys and girls. The fee is $1200 per year including mess.",
+        "timing": "College timings are Monday to Saturday, 9:00 AM to 4:30 PM.",
+        "locat": "We are centrally located in University City, 5 mins from the main metro station.",
+        "document": "You need: 10th & 12th Marksheets, Transfer Certificate, ID Proof, and 4 Passport photos.",
+        "scholarship": "Yes! Merit-based scholarships up to 50% waiver are available for students scoring above 90%.",
+        "contact": "Contact us at info@edu.college.edu or call 1800-123-4567 for direct assistance."
+    }
+    
+    # Iterate through patterns to find a match
+    for keyword, response in rules.items():
+        if keyword in input_text:
+            return response
+            
+    # Default fallback response
+    return "I'm sorry, I don't have information on that. Please ask about admission, courses, fees, hostels, timing, or contact details."
+
+# Main loop for terminal execution
+if __name__ == "__main__":
+    print("🤖 College Chatbot started. Type 'exit' to quit.")
+    while True:
+        user_query = input("You: ")
+        if user_query.lower() == 'exit':
+            break
+        print("Bot:", get_response(user_query))
+</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2><i class="fa-solid fa-robot"></i> EduBot AI Project</h2>
+            </div>
+            <div class="contact-info">
+                <p><i class="fa-solid fa-location-dot"></i> 123 University Road, Tech Campus</p>
+                <p><i class="fa-solid fa-envelope"></i> admin@college-enquiry.edu</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (800) 555-0199</p>
+            </div>
+            <div class="footer-links">
+                <p>Designed as part of an Artificial Intelligence Project.</p>
+                <p>Technologies: Python | Rule-based AI | Web Tech</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 College Enquiry Chatbot System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
